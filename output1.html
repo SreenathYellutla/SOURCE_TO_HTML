@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Source2HTML</title>
+<style>
+body{
+background:black;
+color:white;
+font-family:monospace;
+font-size:16px;
+}
+pre{
+white-space:pre-wrap;
+tab-size:4;
+}
+</style>
+</head>
+<body>
+<pre>
+<span style="color:grey;">   1  </span><span style="color:violet;">#include</span> <span style="color:lightblue;">&lt;stdio.h&gt;</span>
+<span style="color:grey;">   2  </span>
+<span style="color:grey;">   3  </span><span style="color:violet;">#define</span> <span style="color:khaki;">MAX</span> <span style="color:lightgreen;">100</span>
+<span style="color:grey;">   4  </span><span style="color:violet;">#define</span> <span style="color:khaki;">STR</span>(x) #x
+<span style="color:grey;">   5  </span><span style="color:violet;">#define</span> <span style="color:khaki;">PI</span> <span style="color:lightgreen;">3.14159f</span>
+<span style="color:grey;">   6  </span>
+<span style="color:grey;">   7  </span><span style="color:#6A9955;">/* A multi-line comment</span>
+<span style="color:grey;">   8  </span><span style="color:grey;"><span style="color:#6A9955;">   that spans two lines, with &lt;tags&gt; &amp; stuff */</span>
+<span style="color:grey;">   9  </span>
+<span style="color:grey;">  10  </span><span style="color:#E06C75;">int</span> main(<span style="color:#E06C75;">void</span>)
+<span style="color:grey;">  11  </span>{
+<span style="color:grey;">  12  </span>    <span style="color:#6A9955;">// single line comment with "quotes" and /* nested marker</span>
+<span style="color:grey;">  13  </span>    <span style="color:#E06C75;">unsigned</span> <span style="color:#E06C75;">long</span> big = <span style="color:lightgreen;">0x1FUL</span>;
+<span style="color:grey;">  14  </span>    <span style="color:#E06C75;">float</span> f = <span style="color:lightgreen;">1.5e-3f</span>, g = <span style="color:lightgreen;">.5</span>;
+<span style="color:grey;">  15  </span>    <span style="color:#E06C75;">char</span> c = <span style="color:orange;">'\''</span>;
+<span style="color:grey;">  16  </span>    <span style="color:#E06C75;">char</span> *s = <span style="color:orange;">"say \"hi\" // not a comment /* nor this */ &lt;b&gt;"</span>;
+<span style="color:grey;">  17  </span>    <span style="color:#E06C75;">int</span> x = <span style="color:lightgreen;">10</span> / <span style="color:lightgreen;">2</span>;            <span style="color:#6A9955;">/* trailing comment */</span>
+<span style="color:grey;">  18  </span>
+<span style="color:grey;">  19  </span>    <span style="color:violet;">for</span> (<span style="color:#E06C75;">int</span> i = <span style="color:lightgreen;">0</span>; i &lt; MAX; i++)
+<span style="color:grey;">  20  </span>    {
+<span style="color:grey;">  21  </span>        <span style="color:violet;">if</span> (i % <span style="color:lightgreen;">2</span> == <span style="color:lightgreen;">0</span>)
+<span style="color:grey;">  22  </span>            <span style="color:violet;">continue</span>;
+<span style="color:grey;">  23  </span>        printf(<span style="color:orange;">"%d\n"</span>, i);
+<span style="color:grey;">  24  </span>    }
+<span style="color:grey;">  25  </span>    <span style="color:violet;">return</span> <span style="color:lightgreen;">0</span>;
+<span style="color:grey;">  26  </span>}</pre>
+</body>
+</html>
